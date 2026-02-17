@@ -1,7 +1,7 @@
 body {
-    background-color: #0d0d0d;
-    color: #e0e0e0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #080808;
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,41 +10,28 @@ body {
 }
 
 .profile-card {
-    background: rgba(20, 20, 20, 0.8);
-    padding: 40px 30px;
-    border-radius: 24px;
+    background: rgba(15, 15, 15, 0.9);
+    padding: 50px 35px;
+    border-radius: 20px;
     border: 1px solid #222;
     text-align: center;
     width: 320px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    backdrop-filter: blur(10px);
-}
-
-.avatar-placeholder {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(45deg, #333, #111);
-    border-radius: 50%;
-    margin: 0 auto 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 24px;
-    border: 1px solid #444;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
 .username {
-    font-size: 22px;
-    margin: 10px 0;
+    font-size: 28px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
+    /* Эффект свечения как на скрине */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
 .description {
-    font-size: 14px;
-    color: #aaa;
-    line-height: 1.5;
-    margin-bottom: 30px;
+    font-size: 15px;
+    color: #999;
+    line-height: 1.4;
+    margin-bottom: 35px;
 }
 
 .links {
@@ -55,26 +42,29 @@ body {
 
 .link-btn {
     text-decoration: none;
-    color: #fff;
-    padding: 12px;
-    background: #1a1a1a;
+    color: #eee;
+    padding: 14px;
+    background: transparent;
     border: 1px solid #333;
-    border-radius: 12px;
-    font-size: 14px;
-    transition: all 0.3s ease;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.link-btn:hover {
+/* Стили для ссылок при наведении */
+a.link-btn:hover {
     background: #fff;
     color: #000;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
 }
 
-.footer-info {
-    margin-top: 25px;
-    font-size: 12px;
-    color: #555;
-    border-top: 1px solid #222;
-    padding-top: 15px;
+/* Стиль для рамки с Discord тегом (не кликабельная, но в том же стиле) */
+.discord-tag {
+    cursor: default;
+    border-color: #444;
+    color: #bbb;
+    margin-top: 10px;
+    font-size: 13px;
 }
